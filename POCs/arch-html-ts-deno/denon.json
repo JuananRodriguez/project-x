@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": {
+      "cmd": "deno run --config tsconfig.json --allow-net --allow-read server.ts",
+      "watch": true,
+      "unstable": false,
+      "exts": ["ts", "html"]
+    }
+  }
+}
