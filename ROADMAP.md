@@ -7,3 +7,6 @@
 - Zero Framework.
 - Custom router semi-SPA.
 - use-cases with eventbus/observer.
+
+## Projects
+- [] Backoffice with connected plugins by libraries.
