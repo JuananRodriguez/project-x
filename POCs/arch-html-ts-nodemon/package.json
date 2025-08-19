@@ -1,0 +1,27 @@
+{
+  "name": "arch-html-ts-nodemon",
+  "version": "1.0.0",
+  "description": "just testing nodemon refresh with HTML",
+  "main": "main.ts",
+  "scripts": {
+    "test": "test",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuananRodriguez/project-x.git"
+  },
+  "author": "Juanan Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuananRodriguez/project-x/issues"
+  },
+  "homepage": "https://github.com/JuananRodriguez/project-x#readme",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  }
+}
