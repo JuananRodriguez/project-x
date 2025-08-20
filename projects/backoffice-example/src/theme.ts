@@ -9,7 +9,7 @@ export const theme = {
     danger: "#E53935",
     success: "#43A047",
   },
-  spacing: (factor: number) => `${factor / 16}rem`, // ej. spacing(2) = 16px
+  spacing: (factor: number) => `${factor * 8}px`, // ej. spacing(2) = 16px
   borderRadius: "12px",
   shadows: {
     card: "0 2px 8px rgba(0,0,0,0.1)",
