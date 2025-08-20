@@ -6,13 +6,23 @@ type ReactiveTitleEmitterProps = {
 };
 
 export function ReactiveTitleEmitter({ children }: ReactiveTitleEmitterProps) {
-  const destination = document.getElementById("testing-heading-portal");
+  const [destination, setDestination] = React.useState<HTMLElement | null>(
+    null
+  );
 
-  if (!destination) {
-    throw new Error(
-      "Destination element not found: testing-heading-portal. Please use the ReactiveTitle.Listener component to create it."
+  React.useEffect(() => {
+    const destinationElement = document.getElementById(
+      "testing-heading-portal"
     );
-  }
 
-  return ReactDOM.createPortal(children, destination);
+    if (!destinationElement) {
+      throw new Error(
+        "No element with id 'testing-heading-portal' found in the document."
+      );
+    }
+
+    setDestination(destinationElement);
+  }, []);
+
+  return destination ? ReactDOM.createPortal(children, destination) : null;
 }
