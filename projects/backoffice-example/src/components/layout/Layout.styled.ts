@@ -13,8 +13,9 @@ export const LayoutWrapper = styled.div`
 
 export const Sidebar = styled.aside`
   grid-area: sidebar;
-  background-color: #f4f4f4;
-  padding: 20px;
+  background: ${({ theme }) => theme.colors.sidebar};
+  color: ${({ theme }) => theme.colors.text};
+  padding: ${({ theme }) => theme.spacing(4)};
   border-right: 1px solid #ddd;
   height: 100%;
 `;
@@ -22,7 +23,7 @@ export const Sidebar = styled.aside`
 export const Header = styled.header`
   grid-area: header;
   background-color: #282c34;
-  padding: 20px;
+  padding: 0.25rem;
   color: white;
   text-align: center;
 `;
@@ -30,14 +31,14 @@ export const Header = styled.header`
 export const Main = styled.main`
   grid-area: main;
   flex: 1;
-  padding: 20px;
+  padding: 0.25rem;
   background-color: #f0f0f0;
 `;
 
 export const Footer = styled.footer`
   grid-area: footer;
   background-color: #282c34;
-  padding: 10px;
+  padding: 0.25rem;
   color: white;
   text-align: center;
 `;
